@@ -47,7 +47,7 @@ const SearchPage: FC<ISearchPageContext> = ({ searchParams: { query } }) => {
 
       setPages(data.pages);
       setItems(data.items || []);
-    } catch (e) {
+    } catch {
       // TODO: handle loading error
     } finally {
       setIsLoading(false);
