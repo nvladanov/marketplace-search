@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 :root {
+  --primary: #fdde55;
   --background: #0a0a0a;
   --foreground: #ededed;
   --secondary: #232325;
   --tertiary: #2f2f32;
   --placeholder: #5f5f60;
+  --link: #8ab4dd;
 }
 
 body {
