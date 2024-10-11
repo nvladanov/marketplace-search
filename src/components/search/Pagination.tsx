@@ -16,7 +16,7 @@ export const Pagination: FC<IProps> = ({ page, pages, onChangePage }) => {
         <>
           <div
             onClick={() => onChangePage(page - 1)}
-            className="flex items-center justify-center text-lg h-10 px-5 font-medium rounded-lg hover:bg-secondary transition cursor-pointer"
+            className="hidden sm:flex items-center justify-center text-lg h-10 px-5 font-medium rounded-lg hover:bg-secondary transition cursor-pointer"
           >
             previous
           </div>
@@ -49,7 +49,7 @@ export const Pagination: FC<IProps> = ({ page, pages, onChangePage }) => {
           ))}
           <div
             onClick={() => onChangePage(page + 1)}
-            className="flex items-center justify-center text-lg h-10 px-5 font-medium rounded-lg hover:bg-secondary transition cursor-pointer"
+            className="hidden sm:flex items-center justify-center text-lg h-10 px-5 font-medium rounded-lg hover:bg-secondary transition cursor-pointer"
           >
             next
           </div>

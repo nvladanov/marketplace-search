@@ -32,7 +32,12 @@ export const SearchListItem: FC<IProps> = ({ item }) => (
     </div>
     <div className="flex flex-col gap-0.5 text-sm mt-1">
       {(item.accessibleAt || []).map((link, index) => (
-        <Link key={index} href={link} className="text-link" target="_blank">
+        <Link
+          key={index}
+          href={link}
+          className="text-link truncate w-full"
+          target="_blank"
+        >
           {link}
         </Link>
       ))}

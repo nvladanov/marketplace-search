@@ -70,8 +70,8 @@ const SearchPage: FC<ISearchPageContext> = ({ searchParams: { query } }) => {
 
   return (
     <div className="relactive">
-      <main className="px-10 py-4 max-w-[760px]">
-        <div className="absolute max-w-[680px] w-full">
+      <main className="py-4 max-w-[760px] px-3 md:px-10">
+        <div className="absolute md:max-w-[680px] w-[calc(100%-24px)]">
           <Search
             value={searchValue}
             onChange={setSearchValue}
@@ -92,7 +92,7 @@ const SearchPage: FC<ISearchPageContext> = ({ searchParams: { query } }) => {
             )}
           </div>
         )}
-        <div className="flex gap-4 mt-8 mb-32 justify-between">
+        <div className="flex flex-col sm:flex-row gap-4 mt-8 mb-32 justify-between">
           <Pagination
             page={page}
             pages={pages}

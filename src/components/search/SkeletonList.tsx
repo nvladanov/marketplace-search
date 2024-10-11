@@ -6,10 +6,13 @@ export const SkeletonList = () => {
   return (
     <div className="flex flex-col gap-3 mt-16">
       {new Array(AMOUNT_ITEMS).fill(null).map((_, index) => (
-        <div key={index} className="bg-secondary rounded-xl py-3 px-5">
+        <div
+          key={index}
+          className="bg-secondary rounded-xl py-3 px-5 overflow-hidden"
+        >
           <div className="text-lg">
             <a href="#" className="text-link">
-              <Skeleton key={index} className="w-[360px] h-[21px]" />
+              <Skeleton key={index} className="w-[310px] h-[21px]" />
             </a>
           </div>
           <div className="text-sm mt-1">
